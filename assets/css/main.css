@@ -18,6 +18,7 @@ font-family: 'Jost', sans-serif;
     --primary-green: #38BC7C;
     --secondary-green: #2B7D56;
     --terciary-green: #005F1D;
+    --light: #FFFFFF;
 }
 
 /* Header */
@@ -30,4 +31,25 @@ header{
 header .button-container a{
     font-size: 1.5rem;
     background-color: var(--secondary-green);
+}
+
+/* Footer */
+footer{
+    background-color: var(--dark);
+    color: var(--light);
+    font-family: 'Inter', sans-serif;
+}
+
+footer .image-container{
+    border-right: 1px solid var(--light);
+}
+
+footer p{
+    font-size: 0.87rem;
+    font-weight: 500;
+}
+
+footer span{
+    font-size: 0.75rem;
+    font-weight: 400;
 }
