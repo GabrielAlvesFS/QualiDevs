@@ -19,3 +19,15 @@ font-family: 'Jost', sans-serif;
     --secondary-green: #2B7D56;
     --terciary-green: #005F1D;
 }
+
+/* Header */
+header{
+    font-family: 'Expletus Sans', cursive;
+    font-size: 1.75rem;  
+    background-color: var(--dark);
+}
+
+header .button-container a{
+    font-size: 1.5rem;
+    background-color: var(--secondary-green);
+}
