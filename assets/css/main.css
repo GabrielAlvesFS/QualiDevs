@@ -14,7 +14,7 @@ font-family: 'Jost', sans-serif;
 /* Colors */
 :root{
     --dark: #000000;
-    --drak-grey: #20252A;
+    --dark-grey: #20252A;
     --primary-green: #38BC7C;
     --secondary-green: #2B7D56;
     --terciary-green: #005F1D;
@@ -24,7 +24,7 @@ font-family: 'Jost', sans-serif;
 header{
     font-family: 'Expletus Sans', cursive;
     font-size: 1.75rem;  
-    background-color: var(--dark);
+    background-color: var(--dark-grey);
 }
 
 header .button-container a{
