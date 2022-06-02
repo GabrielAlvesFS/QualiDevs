@@ -10,3 +10,12 @@ font-family: 'Inter', sans-serif;
 font-family: 'Jost', sans-serif;
 */
 @import url('https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@400;500;600;700&family=Familjen+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500;600;700&family=Fira+Sans+Condensed:wght@400;500;600;700&family=Fjalla+One&family=Iceberg&family=Inter:wght@300;400;500;600;700&family=Jost:wght@400;500;600;700&display=swap');
+
+/* Colors */
+:root{
+    --dark: #000000;
+    --drak-grey: #20252A;
+    --primary-green: #38BC7C;
+    --secondary-green: #2B7D56;
+    --terciary-green: #005F1D;
+}
