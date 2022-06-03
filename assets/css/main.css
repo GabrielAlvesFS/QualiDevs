@@ -33,6 +33,49 @@ header .button-container a{
     background-color: var(--secondary-green);
 }
 
+/* Main Landing Page*/
+main h1{
+    font-family: 'Iceberg', cursive;
+    color: var(--terciary-green);
+    font-weight: 400;
+    font-size: 4rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+#sub-titulo{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 2.6rem;
+    color: var(--dark);
+}
+
+#coluna-texto1{
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-left: 2rem;
+}
+
+#coluna-texto2{
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+#button{
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    background-color: var(--secondary-green);
+    color: var(--dark-grey);
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    box-shadow: 0px 5px 15px var(--dark-grey);
+}
+
 /* Footer */
 footer{
     background-color: var(--dark);
