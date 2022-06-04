@@ -57,31 +57,61 @@
     </main>
 
     <!-- Section Depoimentos -->
-    <section>
-        <section>
-            <!-- Não precisa ser necessariamente section, aqui fica as Setas, podem usar FontAwesome -->
-        </section>
-
-        <!-- Depoimentos box -->
-        <section>
-            <section>
-                <!-- Foto -->
-                <!-- Nome -->
-                <!-- Cargo -->
-            </section>
-    
-            <section>
-                <!-- Depoimento -->
-            </section>
-        </section>
-
-        <section>
-            <!-- Não precisa ser necessariamente section, aqui fica as Setas, podem usar FontAwesome -->
-        </section>
-    </section>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner mt-5 mb-5">
+            <div class="carousel-item active">
+                <div class="row justify-content-center">
+                <div class="col col-1">
+                    <div class="justify-content-center d-flex"><img  src="./assets/images/g14.jpg" class="img-responsive d-block" alt="..."></div>
+                    <div  class="text-center"><span>Maria</span></div>
+                    <div class="text-center"><span >Designer</span></div>
+                </div>
+                <div class="col col-4">
+                <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam inventore hic ad esse! Iste dolorem libero est quo saepe neque tempora, incidunt earum officia explicabo, repudiandae laboriosam non. Rem, autem.</p>
+                </div>
+                </div>
+              </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col col-1">
+                    <div class="justify-content-center d-flex"><img  src="./assets/images/g14.jpg" class="img-responsive d-block" alt="..."></div>
+                    <div  class="text-center"><span>Luciana</span></div>
+                    <div class="text-center"><span >Analista QA</span></div>
+                </div>
+                <div class="col col-4">
+                <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam inventore hic ad esse! Iste dolorem libero est quo saepe neque tempora, incidunt earum officia explicabo, repudiandae laboriosam non. Rem, autem.</p>
+                </div>
+                </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col col-1">
+                    <div class="justify-content-center d-flex"><img  src="./assets/images/g14.jpg" class="img-responsive d-block" alt="..."></div>
+                    <div  class="text-center"><span>José</span></div>
+                    <div class="text-center"><span >DevOps</span></div>
+                </div>
+                <div class="col col-4">
+                <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam inventore hic ad esse! Iste dolorem libero est quo saepe neque tempora, incidunt earum officia explicabo, repudiandae laboriosam non. Rem, autem.</p>
+                </div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+        <button class="carousel-control-prev col col-1 justify-content-end" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        </div>
+        <div class="row">
+        <button class="carousel-control-next col col-1 justify-content-start" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+      </div>
 
     <!-- Footer -->
-    <footer class="d-flex flex-row justify-content-center gap-5 py-2">
+    <footer class="d-flex flex-row mt-5 justify-content-center gap-5 py-2">
         <!-- Section da Logo -->
         <section class="image-container">
             <img src="./assets/images/QualiDevs Logo.svg" alt="logo da QualiDevs">
