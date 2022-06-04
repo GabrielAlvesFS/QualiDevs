@@ -97,3 +97,10 @@ footer span{
     font-weight: 400;
 }
 
+.carousel-control-prev {
+    margin-left: 12rem;
+}
+
+.carousel-control-next {
+    margin-right: 12rem;
+}
