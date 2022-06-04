@@ -20,6 +20,11 @@ font-family: 'Jost', sans-serif;
     --terciary-green: #005F1D;
     --light: #FFFFFF;
 }
+/* Body */
+body{
+    height: fit-content;
+}
+
 
 /* Header */
 header{
@@ -81,6 +86,7 @@ footer{
     background-color: var(--dark);
     color: var(--light);
     font-family: 'Inter', sans-serif;
+    margin-top: 5.37rem;
 }
 
 footer .image-container{
