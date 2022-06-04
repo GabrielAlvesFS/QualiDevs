@@ -104,3 +104,17 @@ footer span{
 .carousel-control-next {
     margin-right: 12rem;
 }
+
+.contact-h1 {
+    font-family: 'Iceberg', cursive;
+    color: var(--terciary-green);
+    font-weight: 400;
+    font-size: 4rem;
+}
+.justify-content-between {
+    width: 7rem;
+}
+
+.div-main-contact {
+    width: 100%;
+}
