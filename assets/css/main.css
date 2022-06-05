@@ -76,6 +76,58 @@ main h1{
     box-shadow: 0px 5px 15px var(--dark-grey);
 }
 
+/* Main Services */
+.card-container{
+    width: 300px;
+    border-radius: 20px;
+}
+
+.card-header-container{
+    font-family: 'Expletus Sans', cursive;
+    background-color: var(--dark);
+    height: 100px;
+    color: var(--light);
+    border-top-right-radius: 30px ;
+    border-top-left-radius: 40px;
+}
+
+.card-corpo{
+    font-family: 'Familjen Grotesk', sans-serif;
+    background-color: var(--primary-green);
+    height: 300px;
+}
+
+.card-footer-container{
+    font-family: 'Fira Sans Condensed', sans-serif;
+    height: 100px;
+    background-color: var(--secondary-green);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.li{
+    color: var(--dark);
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 1.3rem;
+}
+
+.botao-container{
+   font-family: 'Fira Sans Condensed', sans-serif;
+   height: 40px;
+   font-size: 1.7rem;
+   background-color: var(--light);
+   border-radius: 20px;
+   color: var(--dark);
+}
+
+.card-inferior{
+   width: 650px;
+   font-family: 'Fira Sans Condensed', sans-serif;
+   background-color: var(--primary-green);
+   border-radius: 20px;
+   color: var(--dark);
+}
+
 /* Footer */
 footer{
     background-color: var(--dark);
