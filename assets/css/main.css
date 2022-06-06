@@ -133,6 +133,46 @@ main h1{
    color: var(--dark);
 }
 
+/* Main Login */
+.form-container{
+    width: 500px;
+    height: 430px;
+    margin-left: 470px;
+}
+
+.login{
+    font-family: 'Fira Code', monospace;
+    font-size: 1.7rem;
+    color: var(--terciary-green);
+}
+
+.email{
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+.senha{
+    font-family: 'Fira Code', monospace;
+    font-size: 1.2rem;
+    width: 400px;
+}
+
+.recupera-senha{
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    color: var(--terciary-green);
+}
+
+.botao-login{
+    font-family: 'Fira Code',  monospace;
+    font-size: 1.5rem;
+    background-color: var(--primary-green);
+    box-shadow: 0px 5px 15px var(--dark-grey);
+    width: 200px;
+    margin-left: 140px;
+}
+
 /* Footer */
 footer{
     background-color: var(--dark);
