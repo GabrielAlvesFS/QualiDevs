@@ -213,3 +213,16 @@ footer span{
 .div-main-contact {
     width: 100%;
 }
+
+.contact-h1 {
+    margin-top: 3rem;
+}
+
+.main-contact {
+    height: 23rem;
+    margin-bottom: 14.5rem;
+}
+
+.icons-contact {
+    width: 7rem;
+}
