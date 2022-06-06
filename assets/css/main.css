@@ -137,7 +137,7 @@ main h1{
 .form-container{
     width: 500px;
     height: 430px;
-    margin-left: 470px;
+    margin: 0 auto;
 }
 
 .login{
