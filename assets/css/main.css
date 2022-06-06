@@ -173,6 +173,50 @@ main h1{
     margin-left: 140px;
 }
 
+/* Main Recovery */
+.form-senha{
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.legenda{
+    font-family: 'Fira Code', monospace;
+    font-size: 1.7rem;
+    width: 500px;
+    color: var(--terciary-green);
+}
+
+.texto-container{
+    font-family: 'Fira Code', monospace;
+    font-size: 1rem;
+    width: 330px;
+    margin-left: 85px;
+}
+
+.email-recovery{
+    font-family: 'Fira Code', monospace;
+    width: 400px;
+}
+
+.botao-recovery{
+    width: 200px;
+    height: 46.51px;
+}
+
+.texto-inferior-recovery{
+    font-family: 'Fira Code', monospace;
+}
+
+.login-ancora{
+    color: var(--primary-green);
+}
+
+.login-ancora:hover{
+    color: var(--secondary-green);
+}
+
 /* Footer */
 footer{
     background-color: var(--dark);
