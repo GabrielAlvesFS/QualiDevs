@@ -3,6 +3,12 @@ class ZipCodeController{
         const currentZipCode = $('#zip-code').val()
         const infoZipCode = new RequestApi(currentZipCode)
         const changeInfoInputs = new ZipCodeView
+
+        //se o cep for menor que 8 digitos faz isso:
+        if (currentZipCode.length !== 8){
+            changeInfoInputs.changeInvalid()
+        }
+        
         infoZipCode.getZipCode()
         changeInfoInputs.changeInputs()
     }
