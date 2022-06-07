@@ -1,8 +1,10 @@
 class ZipCodeController{
     control(){
         const currentZipCode = $('#zip-code').val()
-        const infoZipCode = new RequestApi(currentZipCode).getZipCode()
-        console.log(infoZipCode)
+        const infoZipCode = new RequestApi(currentZipCode)
+        const changeInfoInputs = new ZipCodeView
+        infoZipCode.getZipCode()
+        changeInfoInputs.changeInputs()
     }
 
 }
