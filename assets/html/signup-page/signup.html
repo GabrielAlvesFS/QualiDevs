@@ -19,9 +19,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Link JS -->
+    <!-- Zip Code MVC -->
     <script src="../../js/Controller/zipcode-controller.js"></script>
     <script src="../../js/Model/zipcode-model.js"></script>
     <script src="../../js/View/zipcode-view.js"></script>
+
+    <!-- Form MVC -->
+    <script src="../../js/Controller/form-controller.js"></script>
+    <script src="../../js/Model/form-model.js"></script>
+    <script src="../../js/View/form-view.js"></script>
+
+    <!-- Main JS -->
     <script src="../../js/main.js" defer></script>
 </head>
 <body>
@@ -53,72 +61,72 @@
         <section class="section-form">
             <!-- Nome/Sobrenome -->
             <div class="row">
-            <div class="col signup-element">
-                <input type="text" name="name" class="rounded-3 input-signup" id="name" placeholder="Nome">
-            </div>
-            <!-- Email/senha -->
-            <div class="col signup-element">
-                <input type="email" name="email" class="rounded-3 input-signup" id="email" placeholder="Email">
-            </div>
-            </div>
-
-            <div class="row">
-            <div class="col signup-element">
-                <input type="password" name="senha" class="rounded-3 input-signup" id="password" placeholder="Senha">
-            </div>
-            <div class="col signup-element">
-                <input type="password" name="confirmar-senha" class="rounded-3 input-signup" id="confirm-password" placeholder="Confirme sua senha">
-            </div>
+                <div class="col signup-element">
+                    <input type="text" name="name" class="rounded-3 input-signup" id="name" placeholder="Nome" min="3" required>
+                </div>
+                <!-- Email/senha -->
+                <div class="col signup-element">
+                    <input type="email" name="email" class="rounded-3 input-signup" id="email" placeholder="Email" required>
+                </div>
             </div>
 
             <div class="row">
-            <!-- Cep -->
-            <div class="col col-5 d-inline-flex justify-content-between div-cep signup-element">
-                <input type="number" name="cep" class="w-50 rounded-3 input-signup" id="zip-code" placeholder="CEP" min="8">
-                <button class="button-cep border-0 rounded-3 fw-semibold" id="cepButton">BUSCAR</button>
-            </div>
-            <!-- RG -->
-            <div class="col div-rg signup-element">
-                <input type="text" name="rg" class="rounded-3 input-signup" id="rg" placeholder="RG">
-            </div>
-            </div>
-            
-            <div class="row">
-            <!-- Estado -->
-            <div class="col signup-element">
-                <input type="text" name="estado" class="rounded-3 input-signup" id="state" placeholder="Estado">
-            </div>
-            <!-- Cidade -->
-            <div class="col signup-element">
-                <input type="text" name="cidade" class="rounded-3 input-signup" id="city" placeholder="Cidade">
-            </div>
+                <div class="col signup-element">
+                    <input type="password" name="senha" class="rounded-3 input-signup" id="password" placeholder="Senha" required>
+                </div>
+                <div class="col signup-element">
+                    <input type="password" name="confirmar-senha" class="rounded-3 input-signup" id="confirm-password" placeholder="Confirme sua senha" required>
+                </div>
             </div>
 
             <div class="row">
-            <!-- Bairro -->
-            <div class="col signup-element">
-                <input type="text" name="bairro" class="rounded-3 input-signup" id="district" placeholder="Bairro">
+                <!-- Cep -->
+                <div class="col col-5 d-inline-flex justify-content-between div-cep signup-element">
+                    <input type="number" name="cep" class="w-50 rounded-3 input-signup" id="zip-code" placeholder="CEP" min="8" required>
+                    <button class="button-cep border-0 rounded-3 fw-semibold" id="cepButton" >BUSCAR</button>
+                </div>
+                <!-- RG -->
+                <div class="col div-rg signup-element">
+                    <input type="number" name="rg" class="rounded-3 input-signup" id="rg" placeholder="RG" required>
+                </div>
             </div>
-            <!-- Numero -->
-            <div class="col signup-element">
-                <input type="text" name="Numero" class="rounded-3 input-signup" id="number" placeholder="Número">
-            </div>
+                
+            <div class="row">
+                <!-- Estado -->
+                <div class="col signup-element">
+                    <input type="text" name="estado" class="rounded-3 input-signup" id="state" placeholder="Estado" required>
+                </div>
+                <!-- Cidade -->
+                <div class="col signup-element">
+                    <input type="text" name="cidade" class="rounded-3 input-signup" id="city" placeholder="Cidade" required>
+                </div>
             </div>
 
             <div class="row">
-            <!-- Rua -->
-            <div class="col signup-element">
-                <input type="text" name="rua" class="rounded-3 input-signup" id="street" placeholder="Rua">
+                <!-- Bairro -->
+                <div class="col signup-element">
+                    <input type="text" name="bairro" class="rounded-3 input-signup" id="district" placeholder="Bairro" required>
+                </div>
+                <!-- Numero -->
+                <div class="col signup-element">
+                    <input type="number" name="Numero" class="rounded-3 input-signup" id="number" placeholder="Número" required>
+                </div>
             </div>
-            <!-- Complemento -->
-            <div class="col signup-element">
-                <input type="text" name="complemento" class="rounded-3 input-signup" id="complement" placeholder="Complemento">
-            </div>
+
+            <div class="row">
+                <!-- Rua -->
+                <div class="col signup-element">
+                    <input type="text" name="rua" class="rounded-3 input-signup" id="street" placeholder="Rua" required>
+                </div>
+                <!-- Complemento -->
+                <div class="col signup-element">
+                    <input type="text" name="complemento" class="rounded-3 input-signup" id="complement" placeholder="Complemento">
+                </div>
             </div>
 
         </section>
         
-        <button class="botao-signup mt-5 border-0 rounded-3 fw-semibold">CADASTRAR</button>
+        <button id="signupButton" class="botao-signup mt-5 border-0 rounded-3 fw-semibold" type="submit" value="signup" disabled>CADASTRAR</button>
     </form>
     
     <!-- Footer -->
