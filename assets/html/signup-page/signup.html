@@ -41,91 +41,83 @@
 
         <!-- Button Login -->
         <section class="button-container">
-            <a class="text-decoration-none text-white px-3 py-1 rounded-2" href="#">Login</a>
+            <a class="text-decoration-none text-white px-3 py-1 rounded-3" href="#">Login</a>
         </section>
     </header>
 
     <!-- Form Cadastre-se box -->
-    <form>
-        <legend> Cadastre-se na nossa lista de espera! </legend>
+    <form class="form-container d-flex form-signup pt-4 align-items-center flex-column border border-2 border-body border-dark rounded-3">
+        <legend class="text-center mb-4 legenda-signup"> Cadastre-se na nossa lista de espera! </legend>
 
-        <section>
+        <section class="section-form">
             <!-- Nome/Sobrenome -->
-            <div>
-                <label for="name">Nome</label>
-                <input type="text" name="name" id="name" placeholder="Coloque-um-Exemplo">
-            </div>
-            <div>
-                <label for="last-name">Sobrenome</label>
-                <input type="text" name="last-name" id="last-name" placeholder="Coloque-um-Exemplo">
-            </div>
-            <!-- RG -->
-            <div>
-                <label for="rg">RG</label>
-                <input type="text" name="rg" id="rg" placeholder="Coloque-um-Exemplo">
+            <div class="row">
+            <div class="col signup-element">
+                <input type="text" name="name" class="rounded-3 input-signup" id="name" placeholder="Nome">
             </div>
             <!-- Email/senha -->
-            <div>
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Coloque-um-Exemplo">
+            <div class="col signup-element">
+                <input type="email" name="email" class="rounded-3 input-signup" id="email" placeholder="Email">
             </div>
-            <div>
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="password" placeholder="Coloque-um-Exemplo">
             </div>
-            <div>
-                <label for="confirmar-senha">Confirme sua senha</label>
-                <input type="password" name="confirmar-senha" id="confirm-password" placeholder="Coloque-um-Exemplo">
-            </div>
-        </section>
-        
 
-        <section>
+            <div class="row">
+            <div class="col signup-element">
+                <input type="password" name="senha" class="rounded-3 input-signup" id="password" placeholder="Senha">
+            </div>
+            <div class="col signup-element">
+                <input type="password" name="confirmar-senha" class="rounded-3 input-signup" id="confirm-password" placeholder="Confirme sua senha">
+            </div>
+            </div>
+
+            <div class="row">
             <!-- Cep -->
-            <div>
-                <label for="cep">Cep</label>
-                <input type="number" name="cep" id="zip-code" placeholder="Coloque-um-Exemplo" min="8">
-                <button id="cepButton">Pesquisar</button>
+            <div class="col col-5 d-inline-flex justify-content-between div-cep signup-element">
+                <input type="number" name="cep" class="w-50 rounded-3 input-signup" id="zip-code" placeholder="CEP" min="8">
+                <button class="button-cep border-0 rounded-3 fw-semibold" id="cepButton">BUSCAR</button>
             </div>
-
+            <!-- RG -->
+            <div class="col div-rg signup-element">
+                <input type="text" name="rg" class="rounded-3 input-signup" id="rg" placeholder="RG">
+            </div>
+            </div>
+            
+            <div class="row">
             <!-- Estado -->
-            <div>
-                <label for="estado">Estado</label>
-                <input type="text" name="estado" id="state" placeholder="Coloque-um-Exemplo">
+            <div class="col signup-element">
+                <input type="text" name="estado" class="rounded-3 input-signup" id="state" placeholder="Estado">
             </div>
-
             <!-- Cidade -->
-            <div>
-                <label for="cidade">Cidade</label>
-                <input type="text" name="cidade" id="city" placeholder="Coloque-um-Exemplo">
+            <div class="col signup-element">
+                <input type="text" name="cidade" class="rounded-3 input-signup" id="city" placeholder="Cidade">
+            </div>
             </div>
 
+            <div class="row">
             <!-- Bairro -->
-            <div>
-                <label for="bairro">Bairro</label>
-                <input type="text" name="bairro" id="district" placeholder="Coloque-um-Exemplo">
+            <div class="col signup-element">
+                <input type="text" name="bairro" class="rounded-3 input-signup" id="district" placeholder="Bairro">
+            </div>
+            <!-- Numero -->
+            <div class="col signup-element">
+                <input type="text" name="Numero" class="rounded-3 input-signup" id="number" placeholder="Número">
+            </div>
             </div>
 
+            <div class="row">
             <!-- Rua -->
-            <div>
-                <label for="rua">Rua</label>
-                <input type="text" name="rua" id="street" placeholder="Coloque-um-Exemplo">
+            <div class="col signup-element">
+                <input type="text" name="rua" class="rounded-3 input-signup" id="street" placeholder="Rua">
             </div>
-            
-            <!-- Numero -->
-            <div>
-                <label for="numero">Numero</label>
-                <input type="text" name="Numero" id="number" placeholder="Coloque-um-Exemplo">
-            </div>
-            
             <!-- Complemento -->
-            <div>
-                <label for="complemento">Complemento</label>
-                <input type="text" name="complemento" id="complement" placeholder="Coloque-um-Exemplo">
+            <div class="col signup-element">
+                <input type="text" name="complemento" class="rounded-3 input-signup" id="complement" placeholder="Complemento">
             </div>
+            </div>
+
         </section>
         
-        <button>Cadastrar</button>
+        <button class="botao-signup mt-5 border-0 rounded-3 fw-semibold">CADASTRAR</button>
     </form>
     
     <!-- Footer -->
