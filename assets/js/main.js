@@ -1,8 +1,10 @@
-$('form').submit(false)
-
 const infoZipCode = new ZipCodeController
+const formValidator = new FormControl
 
-$('#cepButton').on('click', () => {
+formValidator.control()
+
+$('#cepButton').on('click', (e) => {
+    e.preventDefault()
     infoZipCode.control()
 })
 
