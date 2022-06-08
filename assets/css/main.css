@@ -25,12 +25,16 @@ body{
     height: fit-content;
 }
 
+main {
+    margin-top: 3rem;
+}
 
 /* Header */
 header{
     font-family: 'Expletus Sans', cursive;
     font-size: 1.75rem;  
     background-color: var(--dark-grey);
+    justify-content: space-around;
 }
 
 header .button-container a{
@@ -91,10 +95,23 @@ main h1{
     font-family: 'Expletus Sans', cursive;
     background-color: var(--dark);
     height: 100px;
+    padding-top: 1rem;
     color: var(--light);
     border-top-right-radius: 30px ;
     border-top-left-radius: 40px;
 }
+
+/* .ul-nav, .sandwich-menu {
+    display: none;
+} */
+
+.container-fluid, .navbar-toggle, .navbar-toggler-icon {
+    display: none;
+}
+
+.nav-item {
+    color: white;
+} 
 
 .card-corpo{
     font-family: 'Familjen Grotesk', sans-serif;
@@ -116,6 +133,10 @@ main h1{
     font-size: 1.3rem;
 }
 
+.li-pt {
+    padding-top: 3rem;
+}
+
 .botao-container{
    font-family: 'Fira Sans Condensed', sans-serif;
    height: 40px;
@@ -131,14 +152,26 @@ main h1{
    background-color: var(--primary-green);
    border-radius: 20px;
    color: var(--dark);
+   margin-top: 1.5rem;
+   margin-bottom: 0rem;
 }
 
+.index-footer {
+    margin-top: 3rem;
+}
 /* Main Login */
-.form-container{
+.form-container-login {
     width: 500px;
     height: 430px;
     margin: 0 auto;
 }
+
+.form-container {
+    width: 500px;
+    height: 430px;
+    margin: 0 auto;
+}
+
 
 .login{
     font-family: 'Fira Code', monospace;
@@ -162,6 +195,7 @@ main h1{
     font-family: 'Fira Code', monospace;
     font-size: 1rem;
     color: var(--terciary-green);
+    margin-bottom: 3rem;
 }
 
 .botao-login{
@@ -262,7 +296,7 @@ footer span{
 
 .main-contact {
     height: 23rem;
-    margin-bottom: 14.5rem;
+    margin-bottom: 12rem;
 }
 
 .icons-contact {
@@ -320,4 +354,193 @@ footer span{
 
 .legenda-signup {
     padding-right: 4rem;
+}
+
+@media only screen and (max-width: 1366px) {
+    .carousel-control-prev {
+        margin-left: 8rem;
+    }
+    .carousel-control-next {
+        margin-right: 8rem;
+    }
+    body {
+        width: 1366px;
+    }
+    .footer-contact {
+        margin-top: 0rem;
+    }
+    .main-contact {
+        margin-top: 10px;
+        margin-bottom: 62px;
+    }
+    .div-form {
+        margin-bottom: 0rem;
+        padding-top: 3.5rem;
+    }
+    .card-header-container {
+        width: 250px;
+        height: 60px;
+        font-size: 14px;
+        padding-top: 0.2rem;
+    }
+    .card-header-container h2 {
+        font-size: 20px;
+    }
+    .card-corpo {
+        width: 250px;
+        height: 250px;
+    }
+    ul .li {
+        font-size: 18px;
+    }
+    .li-pt {
+        padding-top: 1rem;
+    }
+    .card-footer-container {
+        width: 250px;
+        height: 83.3px;
+    }
+    .footer-services {
+        margin-top: 0rem;
+    }
+    .card-inferior {
+        margin-top: 0rem;
+        margin-bottom: 1.2rem;
+    }
+    .form-signin {
+        width: 400px;
+        height: 400px;
+    }
+    .form-signin input {
+        width: 300px;
+    }
+    .form-signin button {
+        margin: auto auto 0;
+    }
+    .recupera-senha {
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer-signup {
+        margin-top: 10rem;
+    }
+    .form-signup {
+        margin-top: 6rem;
+    }
+    .footer-signin {
+        margin-top: 15rem;
+    }
+    .div-signin {
+        margin-top: 8rem;
+    }
+    .card-inferior {
+        margin-top: 6rem;
+        margin-bottom: 6.3rem;
+    }
+    .main-services {
+        margin-top: 8rem;
+    }
+    .div-recovery {
+        margin-top: 8rem;
+        margin-bottom: 13rem;
+    }
+    .contact-h1 {
+        margin-top: 12rem;
+    }
+    .main-contact {
+        margin-bottom: 11rem;
+    }
+    .index-footer {
+        margin-top: 5.3rem;
+    }
+}
+
+@media only screen and (max-width: 768px) { 
+    .carousel-slide {
+        display: none;
+    }
+    .normal-menu {
+        display: none;
+    }
+    .container-fluid, .navbar-toggle, .navbar-toggler-icon {
+        display: block;
+    }
+    
+    .container-fluid {
+        margin: 0;
+    }
+
+    .maxWidth {
+        max-width: 100px;
+        margin-left: 0;
+        margin-right: 0;
+     }
+     #menuQuali {
+         padding-left: 2rem;
+     }
+    .button-container, .section-logo {
+        padding-left: 6rem;
+        margin-left: 6rem;
+    }
+    
+    #coluna-texto1 {
+        font-size: 48px;
+        padding-top: 12rem;
+    }
+    #coluna-texto2 {
+        font-size: 48px;
+        padding-top: 30rem;
+    }
+    .button-classe {
+        margin-top: 14rem;
+        margin-bottom: 10rem;
+    }
+    .div-main-contact {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-contact {
+        margin-top: 20rem;
+    }
+    .contatos {
+        margin-top: 10rem;
+    }
+    .main-contact {
+        height: 100%;
+    }
+    .img-contato {
+        width: 200px;
+        height: 200px;
+    }
+    .icons-contact {
+        margin-left: 45px;
+    }
+    .div-recovery {
+        margin-top: 10rem;
+        margin-bottom: 15rem;
+    }
+    .main-services {
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-container {
+        margin-top: 5rem;
+    }
+    .div-signin {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    .body {
+        width: 100%;
+    }
+    .form-container {
+        width: 98%;
+        margin-bottom: 11rem;
+    }
+
 }

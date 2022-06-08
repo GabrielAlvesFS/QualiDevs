@@ -18,31 +18,53 @@
 <body>
     <!-- Header -->
     <header class="d-flex justify-content-around align-items-center py-3">
-        <!-- Logo -->
+        <button class="navbar-toggle m-0" type="button" data-bs-target="#menuQuali" data-bs-toggle="collapse" style="cursor:pointer" aria-expanded="true">
+            <span class="navbar-toggler-icon m-0"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse maxWidth m-0" id="menuQuali">
+            <ul class="navbar-nav maxWidth m-0">
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Home</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Serviços</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Contato</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
         <section>
             <img src="../../images/QualiDevs Logo.svg" alt="Logo Image">
         </section>
 
-        <!-- Navigation -->
         <nav class="d-flex gap-5">
-            <a class="text-decoration-none text-light " href="#">Home</a>
-            <a class="text-decoration-none text-light" href="#">Serviços</a>
-            <a class="text-decoration-none text-light" href="#">Contato</a>
-            <a class="text-decoration-none text-light" href="#">Cadastro</a>
+            <a class="text-decoration-none text-light normal-menu" href="#">Home</a>
+            <a class="text-decoration-none text-light normal-menu" href="#">Serviços</a>
+            <a class="text-decoration-none text-light normal-menu" href="#">Contato</a>
+            <a class="text-decoration-none text-light normal-menu" href="#">Cadastro</a>
         </nav>
-
+    
         <!-- Button Login -->
         <section class="button-container">
             <a class="text-decoration-none text-white px-3 py-1 rounded-2" href="#">Login</a>
         </section>
+
+        <div class="container-fluid maxWidth m-0">
     </header>
 
     <!-- Main - Cards de Assinatura -->
-    <main class="d-flex mt-5 justify-content-around">
+    <main class="d-flex main-services justify-content-around">
         <!-- Primeiro Card -->
         <section  class="card-container rounded-4 mb-3">
             <!-- box plano -->
-            <div class="card-header-container pt-3 text-center">
+            <div class="card-header-container text-center">
                 <h2>Plano Básico</h2>
                 <p>Por apenas R$000,00/mês</p>
             </div>
@@ -51,7 +73,7 @@
             <div class="card-corpo">
                 <ul>
                     <!-- Beneficio 1 -->
-                    <li class="li fw-bold pt-5 mb-4">3 (três) profissionais para atendimento particular por semana</li>
+                    <li class="li fw-bold li-pt mb-4">3 (três) profissionais para atendimento particular por semana</li>
                     <!-- Beneficio 2 -->
                     <li class="li fw-bold mb-4">Comunidade no Discord</li>
                     <!-- Beneficio 3 -->
@@ -69,7 +91,7 @@
         <!-- Segundo Card -->
         <section  class="card-container mb-3">
             <!-- box plano -->
-            <div class="card-header-container pt-3 text-center">
+            <div class="card-header-container text-center">
                 <h2>Plano Médio</h2>
                 <p>Por apenas R$000,00/mês</p>
             </div>
@@ -78,7 +100,7 @@
             <div class="card-corpo">
                 <ul>
                     <!-- Beneficio 1 -->
-                    <li class="li fw-bold pt-5 mb-4">6 (seis) profissionais para atendimento particular por semana</li>
+                    <li class="li fw-bold li-pt mb-4">6 (seis) profissionais para atendimento particular por semana</li>
                     <!-- Beneficio 2 -->
                     <li class="li fw-bold mb-4">Comunidade no Discord</li>
                     <!-- Beneficio 3 -->
@@ -96,7 +118,7 @@
         <!-- Terceiro Card -->
         <section  class="card-container mb-3">
             <!-- box plano -->
-            <div class="card-header-container pt-3 text-center">
+            <div class="card-header-container text-center">
                 <h2>Plano Premiun</h2>
                 <p>Por apenas R$000,00/mês</p>
             </div>
@@ -105,7 +127,7 @@
             <div class="card-corpo">
                 <ul>
                     <!-- Beneficio 1 -->
-                    <li class="li fw-bold pt-5 mb-4">8 (oito) profissionais para atendimento particular por semana</li>
+                    <li class="li fw-bold li-pt mb-4">8 (oito) profissionais para atendimento particular por semana</li>
                     <!-- Beneficio 2 -->
                     <li class="li fw-bold mb-4">Comunidade no Discord</li>
                     <!-- Beneficio 3 -->
@@ -122,12 +144,12 @@
     </main>
 
     <!-- Section todos beneficios -->
-    <section class="card-inferior d-flex mb-5 mt-4 my-0 mx-auto text-center">
+    <section class="card-inferior d-flex mx-auto text-center">
         <p>Conheça as 8 (oito) áreas profissionais que utilizamos para turbinar sua qualidade de vida: <strong>Nutricionistas, Psicólogos, Personal Trainers, English Coachs, Gestores financeiros, Contadores, Mentores de Carreira e Consultor de Soft Skills.</strong></p>
     </section>
     
     <!-- Footer -->
-    <footer class="d-flex flex-row justify-content-center gap-5 py-2">
+    <footer class="d-flex flex-row footer-services justify-content-center gap-5 py-2">
         <!-- Section da Logo -->
         <section class="image-container">
             <img src="../../images/QualiDevs Logo.svg" alt="logo da QualiDevs">
