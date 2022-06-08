@@ -254,7 +254,7 @@ footer{
     background-color: var(--dark);
     color: var(--light);
     font-family: 'Inter', sans-serif;
-    margin-top: 5.37rem;
+    margin-top: 14.75rem;
 }
 
 footer .image-container{
@@ -271,6 +271,13 @@ footer span{
     font-weight: 400;
 }
 
+.footer-services {
+    margin-top: 6.75rem;
+}
+
+.footer-signup{
+    margin-top: 9.7rem;
+}
 .carousel-control-prev {
     margin-left: 12rem;
 }
