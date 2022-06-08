@@ -16,26 +16,54 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" ></script>
 
 </head>
-<body>
+<body class="body">
     <!-- Header -->
-    <header class="d-flex justify-content-around align-items-center py-3">
+    <header class="d-flex align-items-center py-3">
+        <button class="navbar-toggle m-0" type="button" data-bs-target="#menuQuali" data-bs-toggle="collapse" style="cursor:pointer" aria-expanded="true">
+            <span class="navbar-toggler-icon m-0"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse maxWidth m-0" id="menuQuali">
+            <ul class="navbar-nav maxWidth m-0">
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Home</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Serviços</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Contato</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
         <!-- Logo -->
         <section>
-            <img src="./assets/images/QualiDevs Logo.svg" alt="Logo Image">
+            <img class="section-logo" src="./assets/images/QualiDevs Logo.svg" alt="Logo Image">
         </section>
-
-        <!-- Navigation -->
+        
         <nav class="d-flex gap-5">
-            <a class="text-decoration-none text-light" href="./index.html">Home</a>
-            <a class="text-decoration-none text-light" href="./assets/html/services-page/services.html">Serviços</a>
-            <a class="text-decoration-none text-light" href="./assets/html/contact-page/contact.html">Contato</a>
-            <a class="text-decoration-none text-light" href="./assets/html/signup-page/signup.html">Cadastro</a>
-        </nav>
 
+            <a class="text-decoration-none text-light normal-menu" href="./index.html">Home</a>
+            <a class="text-decoration-none text-light normal-menu" href="./assets/html/services-page/services.html">Serviços</a>
+            <a class="text-decoration-none text-light normal-menu" href="./assets/html/contact-page/contact.html">Contato</a>
+            <a class="text-decoration-none text-light normal-menu" href="./assets/html/signup-page/signup.html">Cadastro</a>
+
+        </nav>
+    
         <!-- Button Login -->
         <section class="button-container">
             <a class="text-decoration-none text-white px-3 py-1 rounded-2" href="./assets/html/signin-page/signin.html">Login</a>
         </section>
+
+        <div class="container-fluid maxWidth m-0">
+            
+            
+        
     </header>
 
     <!-- Main Content -->
@@ -45,19 +73,19 @@
             <h2 id="sub-titulo">- Estresse</h2>
         </section>
 
-        <section class="d-flex flex-row justify-content-between">
+        <section class="texto-section d-flex flex-row justify-content-between">
             <h2 id="coluna-texto1" class="text-start"><span style="color: #005F1D;">A plataforma especializada</span><br> em fazer a diferença na vida<br> pessoal e profissional dos<br> programadores brasileiros!</h2>
             
             <h2 id="coluna-texto2" class="text-end">O Profissional de TI se encontra<br> entre <span style="color: #38BC7C;">as 10 carreiras</span> mais<br> estressantes do mercado de<br> trabalho, segundo o grupo<br> britânico <span style="color: #2B7D56;"><u>SWNS.</u></span></h2>
         </section>
 
-        <section class="d-flex justify-content-center">
+        <section class="button-classe d-flex justify-content-center">
             <a id="button"  class="btn px-5 py-3" href="#" role="button">Seja QualiDev</a>
         </section>
     </main>
 
     <!-- Section Depoimentos -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide carousel-slide" data-bs-ride="carousel">
         <div class="carousel-inner mt-5 mb-5">
             <div class="carousel-item active">
                 <div class="row justify-content-center">
@@ -76,7 +104,7 @@
                 <div class="col col-1">
                     <div class="justify-content-center d-flex"><img  src="./assets/images/g14.jpg" class="img-responsive d-block" alt="..."></div>
                     <div  class="text-center"><span>Luciana</span></div>
-                    <div class="text-center"><span >Analista QA</span></div>
+                    <div class="text-center analista-qa"><span>QA</span></div>
                 </div>
                 <div class="col col-4">
                 <p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam inventore hic ad esse! Iste dolorem libero est quo saepe neque tempora, incidunt earum officia explicabo, repudiandae laboriosam non. Rem, autem.</p>
@@ -111,7 +139,7 @@
       </div>
 
     <!-- Footer -->
-    <footer class="d-flex flex-row mt-5 justify-content-center gap-5 py-2">
+    <footer class="d-flex flex-row index-footer justify-content-center gap-5 py-2">
         <!-- Section da Logo -->
         <section class="image-container">
             <img src="./assets/images/QualiDevs Logo.svg" alt="logo da QualiDevs">

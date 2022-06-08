@@ -15,42 +15,66 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" ></script>
 </head>
-<body>
+<body class="body">
     <!-- Header -->
     <header class="d-flex justify-content-around align-items-center py-3">
-        <!-- Logo -->
-        <section>
+        <button class="navbar-toggle m-0" type="button" data-bs-target="#menuQuali" data-bs-toggle="collapse" style="cursor:pointer" aria-expanded="true">
+            <span class="navbar-toggler-icon m-0"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse maxWidth m-0" id="menuQuali">
+            <ul class="navbar-nav maxWidth m-0">
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Home</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Serviços</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Contato</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+        <section class="section-logo">
             <img src="../../images/QualiDevs Logo.svg" alt="Logo Image">
         </section>
 
-        <!-- Navigation -->
         <nav class="d-flex gap-5">
-            <a class="text-decoration-none text-light" href="../../../index.html">Home</a>
-            <a class="text-decoration-none text-light" href="../services-page/services.html">Serviços</a>
-            <a class="text-decoration-none text-light" href="../contact-page/contact.html">Contato</a>
-            <a class="text-decoration-none text-light" href="../signup-page/signup.html">Cadastro</a>
-        </nav>
 
+            <a class="text-decoration-none text-light normal-menu" href="../../../index.html">Home</a>
+            <a class="text-decoration-none text-light normal-menu" href="../services-page/services.html">Serviços</a>
+            <a class="text-decoration-none text-light normal-menu" href="../contact-page/contact.html">Contato</a>
+            <a class="text-decoration-none text-light normal-menu" href="../signup-page/signup.html">Cadastro</a>
+
+        </nav>
+    
         <!-- Button Login -->
         <section class="button-container">
             <a class="text-decoration-none text-white px-3 py-1 rounded-2" href="../signin-page/signin.html">Login</a>
         </section>
+
+        <div class="container-fluid maxWidth m-0">
     </header>
     <!-- Form Signin box  -->
-    <div class="d-flex div-form">
-    <form class="form-container d-flex form-signin flex-column border border-2 border-body border-dark rounded-3">
+    <div class="d-flex div-signin div-form">
+    <form class="form-container-login d-flex form-signin flex-column border border-2 border-body border-dark rounded-3">
         <legend class="login mt-4 text-center"> Login </legend>
 
         <input class="email mt-5 mb-5 ms-5 border-dark rounded-pill px-4 py-1" type="email" name="" id="" placeholder="E-mail">
         <input class="senha ms-5 border-dark rounded-pill px-4 py-1" type="password" name="" id="" placeholder="Senha">
-        <p class="recupera-senha mt-1 mb-5 text-end me-5">Esqueceu sua senha?</p>
+        <p class="recupera-senha mt-1 text-end me-5">Esqueceu sua senha?</p>
         
-        <button class="botao-login mt-2 me-5 py-2 border-0 rounded-2 fw-semibold fst-italic">ENTRAR</button>
+        <button class="botao-login mt-2 py-2 border-0 rounded-2 fw-semibold fst-italic">ENTRAR</button>
     </form>
     </div>
 
     <!-- Footer -->
-    <footer class="d-flex flex-row justify-content-center gap-5 py-2">
+    <footer class="d-flex flex-row footer-signin justify-content-center gap-5 py-2">
         <!-- Section da Logo -->
         <section class="image-container">
             <img src="../../images/QualiDevs Logo.svg" alt="logo da QualiDevs">

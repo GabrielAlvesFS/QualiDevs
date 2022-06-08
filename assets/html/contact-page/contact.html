@@ -16,26 +16,50 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" ></script>
     
 </head>
-<body>
+<body class="body">
     <!-- Header -->
     <header class="d-flex justify-content-around align-items-center py-3">
-        <!-- Logo -->
-        <section>
+        <button class="navbar-toggle m-0" type="button" data-bs-target="#menuQuali" data-bs-toggle="collapse" style="cursor:pointer" aria-expanded="true">
+            <span class="navbar-toggler-icon m-0"></span>
+        </button>
+        
+        <div class="navbar-collapse collapse maxWidth m-0" id="menuQuali">
+            <ul class="navbar-nav maxWidth m-0">
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Home</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Serviços</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Contato</a>
+                </li>
+                <li class="nav-item maxWidth m-0">
+                    <a href="" class="nav-link m-0">Cadastro</a>
+                </li>
+            </ul>
+        </div>
+
+        </div>
+        <section class="section-logo">
             <img src="../../images/QualiDevs Logo.svg" alt="Logo Image">
         </section>
 
-        <!-- Navigation -->
         <nav class="d-flex gap-5">
-            <a class="text-decoration-none text-light" href="../../../index.html">Home</a>
-            <a class="text-decoration-none text-light" href="../services-page/services.html">Serviços</a>
-            <a class="text-decoration-none text-light" href="../contact-page/contact.html">Contato</a>
-            <a class="text-decoration-none text-light" href="../signup-page/signup.html">Cadastro</a>
-        </nav>
 
+            <a class="text-decoration-none text-light normal-menu" href="../../../index.html">Home</a>
+            <a class="text-decoration-none text-light normal-menu" href="../services-page/services.html">Serviços</a>
+            <a class="text-decoration-none text-light normal-menu" href="../contact-page/contact.html">Contato</a>
+            <a class="text-decoration-none text-light normal-menu" href="../signup-page/signup.html">Cadastro</a>
+
+        </nav>
+    
         <!-- Button Login -->
         <section class="button-container">
             <a class="text-decoration-none text-white px-3 py-1 rounded-2" href="../signin-page/signin.html">Login</a>
         </section>
+
+        <div class="container-fluid maxWidth m-0">
     </header>
 
 
@@ -45,10 +69,10 @@
         <div class="row justify-content-center div-main-contact">
         <!-- box desenvolvedor 1 -->
         <div class="col col-2 d-flex justify-content-center">
-        <section>
+        <section class="contatos">
             <!-- Image box -->
             <div class="d-flex justify-content-center">
-                <img src="../../images/g14.jpg" alt="">
+                <img class="img-contato" src="../../images/g14.jpg" alt="">
             </div>
 
             <!-- Name -->
@@ -71,10 +95,10 @@
 
         <!-- box desenvolvedor 2 -->
         <div class="col col-2 d-flex justify-content-center">
-        <section>
+        <section class="contatos">
             <!-- Image box -->
             <div class="d-flex justify-content-center">
-                <img src="../../images/g14.jpg" alt="">
+                <img class="img-contato" src="../../images/g14.jpg" alt="">
             </div>
 
             <!-- Name -->
@@ -96,10 +120,10 @@
         </div>
         <!-- box desenvolvedor 3 -->
         <div class="col col-2 d-flex justify-content-center">
-        <section>
+        <section class="contatos">
             <!-- Image box -->
             <div class="d-flex justify-content-center">
-                <img src="../../images/g14.jpg" alt="">
+                <img class="img-contato" src="../../images/g14.jpg" alt="">
             </div>
 
             <!-- Name -->
