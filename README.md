@@ -65,7 +65,7 @@ colaboradores e disponibilização de uma GithubPage com o projeto;
 - POO (classes, objetos);
 - SRP (Single Responsibility Principle);
 - jQuery;
-- Versionamento de código c/ GIT e GitHub (realização de PR’s, Merges e trabalho em diferentes branches)
+- Versionamento de código c/ GIT e GitHub (realização de PR’s, Merges, Forks)
 
 
 ## **Design**
