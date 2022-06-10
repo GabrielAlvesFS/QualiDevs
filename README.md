@@ -45,7 +45,7 @@ O website QualiDevs está hospedado no GitHub Pages: [acesse aqui!](https://gabr
 - Página inicial (home)
 - Página de detalhes sobre o serviço; 
 - Página de cadastro na lista de espera; 
-- Página de contanto; 
+- Página de contato; 
 - Página de login; 
 - Página de recuperação de senha; 
 
